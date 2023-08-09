@@ -49,15 +49,6 @@ function App() {
     });
   }
 
-  // const handleContent = (id) => {
-  //   setIsShowNoteContent((prevItems) => {
-  //     return prevItems.filter((items, index) => {
-  //       return index !== id;
-  //     });
-  //   });
-  //   console.log("content is clicked");
-  // };
-
   const handleKeyDown = (e) => {
     if (
       e.key === "Enter" &&
@@ -82,7 +73,6 @@ function App() {
       {tasks.map((items, index) => {
         return (
           <Note
-            // handleContent={handleContent}
             handleDelete={deleteItem}
             key={index}
             id={index}
